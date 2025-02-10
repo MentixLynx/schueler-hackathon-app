@@ -17,6 +17,21 @@ This project will be worked on by teams of three to five people. You can enhance
 1. You can quickly work on the same code base with your collegues by using the [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare) plugin. For this to work you need a Microsoft or Github Account. Then simply follow the [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare) Quickstart guide.
 2. If you want to quickly expose the app to your colleagues open a new terminal (keep the npm run dev process running in the other terminal) and enter `lt --port 5173`. This will generate a URL which is publicly available. You can find the password under https://loca.lt/mytunnelpassword. This should be done by the Live Share Host so the other people can also see the app on their browser.
 
+# Goals
+1. Create a registration page:
+* Create a username, password and e-mail field.
+* Create a password check with fitting requirements. For example: the password needs at least 8 characters. Make sure to add a hint if the user does enter a valid password.
+* Store the information in local storage, so the user is able to login with its created account.
+2. Create a landing page
+* Be creative fill the app with content. 
+* For example use a public Rest API, see https://github.com/public-apis/public-apis for inspiration or create a blog post system where you can see the posts of other users. (You can store the blog posts in local storage as wel)
+
+# Stretch Goal
+Make a real app with backend and database:
+* Create a backend folder. Install Python and follow the [FastAPI Installation](https://fastapi.tiangolo.com/#installation) guide. Create the python files in the backend folder.
+* Refactor the login to call the backend via REST (for example by using axios) and store the users in a database: https://fastapi.tiangolo.com/tutorial/sql-databases/. You can startup a local Postgres database with docker: https://hub.docker.com/_/postgres
+
+
 # Resources
 ## HTML, Javascript and CSS basics
 * HTML, CSS, JavaScript: https://www.w3schools.com/, https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web
